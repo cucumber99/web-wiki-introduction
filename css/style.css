@@ -21,3 +21,105 @@
 article p {
     text-align: center;
 }
+
+/* 댓글 입력창 스타일 */
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: none; /* 크기 조절 제한 */
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* 포커스 시 테두리 색 변경 및 그림자 효과 */
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 댓글 입력창 컨테이너 정리 */
+.comment-writing-container {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-writing-container legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.comment-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-buttons button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comment-buttons button[type="button"] {
+    background: #007bff;
+    color: white;
+}
+
+.comment-buttons button[type="button"]:hover {
+    background: #0056b3;
+}
+
+.comment-buttons button[type="reset"] {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.comment-buttons button[type="reset"]:hover {
+    background: #c0c0c0;
+}
+
+.comment-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.comment-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.comment-author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    word-break: break-word;
+}

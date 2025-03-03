@@ -69,9 +69,14 @@ article {
   flex-flow: column;
 }
 
+article {
+  margin-bottom: 50px;
+}
+
 div.thumbnail {
   display: flex;
   justify-content: center;
+  gap: 10px;
   margin-bottom: var(--page-paragraph-margin-y);
 }
 

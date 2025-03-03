@@ -105,7 +105,8 @@ aside h2 {
 .profile-image {
   background-image: url("../images/cucumber.jpg");
   background-size: 100%;
-  background-position: center 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
   width: var(--aside-width);
   height: var(--aside-width);
 
